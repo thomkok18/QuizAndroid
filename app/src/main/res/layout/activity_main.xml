@@ -38,17 +38,17 @@
                 android:textColor="@android:color/black" />
 
             <EditText
-                android:id="@+id/answerText"
+                android:id="@+id/answerText1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Put your awnser here"
                 android:textSize="12sp" />
 
             <Button
-                android:id="@+id/answerButton"
+                android:id="@+id/answerButton1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="answerButton"
+                android:onClick="answerButton1"
                 android:text="Check answer" />
 
         </LinearLayout>
@@ -56,28 +56,72 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:orientation="horizontal">
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vraag 2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:text="What is the name of The Netherlands in dutch?"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/answerText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Put your awnser here"
+                android:textSize="12sp" />
 
             <Button
-                android:id="@+id/previous"
+                android:id="@+id/answerButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:onClick="previous"
-                android:text="Previous" />
-
-            <Button
-                android:id="@+id/next"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_weight="1"
-                android:onClick="next"
-                android:text="Next" />
+                android:onClick="answerButton2"
+                android:text="Check answer" />
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vraag 3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:text="What is the name of The Netherlands in dutch?"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/answerText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Put your awnser here"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/answerButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="answerButton3"
+                android:text="Check answer" />
+
+        </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

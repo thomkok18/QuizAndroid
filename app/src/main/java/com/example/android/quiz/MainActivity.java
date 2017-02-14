@@ -15,7 +15,25 @@ public class MainActivity extends AppCompatActivity {
         answer = (EditText) findViewById(R.id.answerText);
     }
 
-    public void answerButton(View view) {
+    public void answerButton1(View view) {
+        String answer1 = answer.getText().toString();
+        if (answer1.matches("Nederland")) {
+            Toast.makeText(getApplicationContext(), "The first answer is correct!", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(getApplicationContext(), "The first answer is incorrect!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void answerButton2(View view) {
+        String answer1 = answer.getText().toString();
+        if (answer1.matches("Nederland")) {
+            Toast.makeText(getApplicationContext(), "The first answer is correct!", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(getApplicationContext(), "The first answer is incorrect!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void answerButton3(View view) {
         String answer1 = answer.getText().toString();
         if (answer1.matches("Nederland")) {
             Toast.makeText(getApplicationContext(), "The first answer is correct!", Toast.LENGTH_SHORT).show();
