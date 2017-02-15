@@ -42,6 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Put your awnser here"
+                android:inputType="textCapWords"
                 android:textSize="12sp" />
 
             <Button
@@ -134,7 +135,9 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_weight="1"
-                    android:src="@drawable/a" />
+                    android:onClick="imageA"
+                    android:src="@drawable/a"
+                    android:state_selected="false" />
 
                 <ImageView
                     android:id="@+id/image2"
@@ -143,14 +146,18 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:src="@drawable/b" />
+                    android:onClick="imageB"
+                    android:src="@drawable/b"
+                    android:state_selected="false" />
 
                 <ImageView
                     android:id="@+id/image3"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_weight="1"
-                    android:src="@drawable/c" />
+                    android:onClick="imageC"
+                    android:src="@drawable/c"
+                    android:state_selected="false" />
 
             </LinearLayout>
 
@@ -163,5 +170,45 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question 4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:text="What planet do we live on?"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/answerButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="answerButton4"
+                android:text="Check answer" />
+
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

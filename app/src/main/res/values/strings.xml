@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Quiz</string>
+
+    <string-array name="planets_array">
+        <item>Choose</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+    </string-array>
 </resources>
